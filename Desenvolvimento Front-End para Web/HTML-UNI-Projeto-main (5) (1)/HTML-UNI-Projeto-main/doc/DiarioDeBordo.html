@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diário de Bordo do Projeto HTML - 1ª Entrega</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #151b3d;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 28px;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        section {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #4a90e2;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #151b3d;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #4a90e2;
+        }
+
+        h3 {
+            color: #4a90e2;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        dl {
+            margin: 15px 0;
+        }
+
+        dt {
+            font-weight: bold;
+            color: #151b3d;
+            margin-top: 10px;
+        }
+
+        dd {
+            margin-left: 20px;
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table th,
+        table td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        table th {
+            background-color: #4a90e2;
+            color: white;
+            font-weight: bold;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        table tr:hover {
+            background-color: #f0f0f0;
+        }
+
+        ul,
+        ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #666;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: #151b3d;
+        }
+
+        @media print {
+            body {
+                background-color: white;
+            }
+
+            section {
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>DIÁRIO DE BORDO DO PROJETO HTML - 1ª ENTREGA</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Informações do Projeto</h2>
+            <dl>
+                <dt><strong>Projeto:</strong></dt>
+                <dd>Desenvolvimento de Website E-commerce</dd>
+
+                <dt><strong>Tema:</strong></dt>
+                <dd>Pulseira Inteligente (Fitness Tracker)</dd>
+
+                <dt><strong>Marca:</strong></dt>
+                <dd>Meraki VitalSync</dd>
+
+                <dt><strong>Entrega:</strong></dt>
+                <dd>1ª Entrega (Foco na Estrutura HTML)</dd>
+
+                <dt><strong>Data do Registro:</strong></dt>
+                <dd>12/10/2025</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2>Equipe e Responsabilidades (Estrutura HTML)</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Integrante</th>
+                        <th>Função Principal na 1ª Entrega (Foco em HTML)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Gabriel Bryan</td>
+                        <td>Desenvolvimento da Página Inicial (Index)</td>
+                    </tr>
+                    <tr>
+                        <td>Nicolas Petrimperni</td>
+                        <td>Desenvolvimento da Página de Catálogo de Produtos</td>
+                    </tr>
+                    <tr>
+                        <td>Kaum Alves</td>
+                        <td>Desenvolvimento da Página de Planos/Assinaturas</td>
+                    </tr>
+                    <tr>
+                        <td>Sidney Marciel</td>
+                        <td>Desenvolvimento da Página de Contato</td>
+                    </tr>
+                    <tr>
+                        <td>Larissa Silva</td>
+                        <td>Desenvolvimento da Página Sobre Nós</td>
+                    </tr>
+                    <tr>
+                        <td>Victor Hugo</td>
+                        <td>Desenvolvimento da Página de Login e Cadastro</td>
+                    </tr>
+                    <tr>
+                        <td>Guilherme Barros</td>
+                        <td>Desenvolvimento da Página de Suporte / FAQ</td>
+                    </tr>
+                    <tr>
+                        <td>Gabriel Pedro</td>
+                        <td>Futuro Responsável pela Padronização Visual (CSS)</td>
+                    </tr>
+                    <tr>
+                        <td>Gabriel de Assis</td>
+                        <td>Desenvolvimento de Páginas de Políticas (Termos de Uso / Trabalhe Conosco) e
+                            Revisão/Documentação</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>1. Planejamento e Estruturação (Base em HTML)</h2>
+
+            <h3>Objetivo da Fase:</h3>
+            <p>Definir as páginas essenciais e distribuir as responsabilidades para a criação da estrutura base do site
+                em HTML.</p>
+
+            <h3>Ações Realizadas:</h3>
+            <ul>
+                <li><strong>Pesquisa de Páginas Essenciais:</strong> Levantamento de estruturas e páginas fundamentais
+                    em sites de comércio eletrônico (e-commerce) para garantir a funcionalidade básica do projeto.</li>
+                <li><strong>Definição do Escopo da Entrega:</strong> Estabelecimento das seguintes estruturas HTML como
+                    prioritárias para esta fase: Página Inicial (Home), Catálogo de Produtos, Planos, Contato, Sobre
+                    Nós, Login, FAQ, Termos de Uso, Suporte e Trabalhe Conosco.</li>
+                <li><strong>Atribuição de Tarefas:</strong> Distribuição das 10 páginas entre os integrantes, com foco
+                    na criação da estrutura semântica em HTML.</li>
+                <li><strong>Definição de Prazos:</strong> Cronograma estipulado para a conclusão individual das
+                    estruturas HTML, visando a integração posterior.</li>
+            </ul>
+
+            <h3>Desafios:</h3>
+            <ul>
+                <li>A pesquisa inicial foi crucial para alinhar o escopo e os elementos HTML necessários.</li>
+                <li>A escolha de um responsável central pelo CSS (Gabriel Pedro) foi uma decisão estratégica, preparando
+                    a estilizaçãoo visual na próxima fase. Nesta entrega, o foco permaneceu estritamente na estrutura
+                    HTML.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>2. Construção Conceitual do Projeto (O "Mini-Mundo")</h2>
+
+            <h3>Objetivo da Fase:</h3>
+            <p>Alinhar a visão e o propósito da marca/site entre todos os membros da equipe para garantir a coerência no
+                desenvolvimento das páginas.</p>
+
+            <h3>Ações Realizadas:</h3>
+            <ul>
+                <li><strong>Pausa para Alinhamento:</strong> Foi identificado o momento de realizar uma pausa no
+                    desenvolvimento do código para que o grupo pudesse construir o conceito e a identidade central da
+                    marca/site.</li>
+                <li><strong>Definição de Objetivo e Marca:</strong> Criação do "mini-mundo" da Meraki VitalSync,
+                    alinhando o objetivo central do produto (Pulseira Inteligente) e o propósito do site.</li>
+            </ul>
+
+            <h3>Aprendizados:</h3>
+            <ul>
+                <li>Este alinhamento conceitual provou ser importante. Garantiu que as tarefas em HTML fossem executadas
+                    com uma base sólida e um entendimento claro do produto final.</li>
+                <li>O conceito de "mini-mundo" assegurou que todas as páginas, embora desenvolvidas individualmente,
+                    convergissem para uma visão unificada.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>3. Integração e Validação Técnica</h2>
+
+            <h3>Objetivo da Fase:</h3>
+            <p>Juntar as estruturas individuais e verificar a conformidade do código HTML completo.</p>
+
+            <h3>Ações Realizadas:</h3>
+            <ul>
+                <li><strong>Integração das Páginas:</strong> Coleta e junção de todos os arquivos HTML desenvolvidos
+                    individualmente para montar a estrutura inicial completa do website.</li>
+                <li><strong>Validação de Código:</strong> O site integrado foi submetido ao W3C Validator para
+                    identificar e corrigir erros de conformidade com os padrões HTML.</li>
+            </ul>
+
+            <h3>Conclusão da Entrega:</h3>
+            <ul>
+                <li>O objetivo principal de entregar a estrutura completa do site em HTML foi cumprido.</li>
+                <li>A etapa de validação demonstrou o compromisso da equipe com a qualidade técnica do código (limpo e
+                    conforme), um requisito essencial antes da aplicação da estilização (CSS) na próxima fase.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Reflexão (Revisor: Gabriel de Assis)</h2>
+            <p>A 1ª Entrega foi marcada com um nível bom de organização na distribuição de tarefas, mas precisamos fazer
+                um realinhamento crucial com a construção do "mini-mundo". A pausa que teremos para transformar o
+                projeto de um mero conjunto de códigos válidos em um produto coerente e com propósito definido vai ser
+                bem importante.</p>
+            <p>A decisão de designar o Gabriel Pedro como responsável pelo CSS vai ser relevante na adição de
+                estilização futura. No entanto, nesta fase, mantivemos nosso foco estritamente na entrega de uma
+                estrutura HTML completa, semântica e validada, e não focar no CSS.</p>
+            <p>O trabalho colaborativo foi a chave para nosso sucesso. Cada membro da equipe cumpriu sua
+                responsabilidade na montagem da base do projeto com o melhor de suas habilidades, esperamos para as
+                proximas etapas.</p>
+        </section>
+
+        <section>
+            <h2>5. Atualizações Posteriores</h2>
+        </section>
+
+        <section>
+            <h3>26/10/2025 - Definição sobre o CSS</h3>
+            <p>A equipe realizou uma conversa no Discord onde ficou pré-definido a estruturação do CSS, incluindo:</p>
+            <img src="doc-img/imagem do pré-css.jpeg" width="75%" style="margin: 0px 55px;">
+        </section>
+
+        <section>
+            <h3>29/10/2025 - Discussão sobre Modernização do CSS</h3>
+            <p>A equipe realizou uma comunicação importante sobre as melhores práticas para implementação do CSS. Foram
+                discutidas técnicas modernas de estilização, incluindo:</p>
+            <ul>
+                <li>Uso de variáveis CSS (Custom Properties) para facilitar a manutenção e consistência visual</li>
+                <li>Implementação de um sistema de design unificado</li>
+                <li>Consolidação de múltiplos arquivos CSS em uma estrutura mais organizada</li>
+                <li>Aplicação de metodologias modernas de responsividade</li>
+            </ul>
+            <p>Esta discussão resultou na decisão de criar um stylesheet unificado com variáveis CSS, facilitando
+                futuras manutenções e garantindo consistência visual em todas as páginas do projeto.</p>
+        </section>
+
+        <section>
+            <h3>30/10/2025 - Ajuste na Equipe</h3>
+            <p>Foi necessário remover um membro da equipe devido à inatividade prolongada. A redistribuição de tarefas
+                foi realizada entre os membros ativos para garantir a continuidade do projeto.</p>
+        </section>
+
+        <section>
+            <h3>05/11/2025 - JavaScript e assistência no CSS</h3>
+            <p>No discord, foi realizado uma assistência no CSS de um dos membros do grupo, e também foi discutido o
+                aspecto de aplicar JavaScript no site para estilizar a página de planos.
+                foi escolhido que não será necessário adicionar o Javascript para "mais informações" nos planos.
+                Invés disso, foi utilizado uma estilização melhor que deixa os planos mais organizados.
+
+                JavaScript invés disso foi usado para criar um sistema de resposta para a página de Contato, e o toggle
+                de light e dark em todas as páginas.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Diário de Bordo - Última atualização: 06/11/2025</p>
+    </footer>
+</body>
+
+</html>

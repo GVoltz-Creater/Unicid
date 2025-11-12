@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Meraki</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/light-toggle.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="Home.html" class="nome-logo">
+                <img src="imgs/logo mod.png" alt="Logo Meraki VitalSync" class="logoBackground">
+            </a>
+            <div class="header-container">
+                <ul>
+                    <li><a href="Catalogo.html">Catálogo</a></li>
+                    <li><a href="Planos.html">Nossos Planos</a></li>
+                    <li><a class="selected-page" href="Login.html">Login</a></li>
+                    <li><a href="Contato.html">Contato</a></li>
+                    <li><button id="theme-toggle" onclick="toggleTheme()"
+                            aria-label="Mudar para modo escuro">🌙</button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-title">
+            <div class="hero-content">
+                <h1>Acesse sua Conta</h1>
+                <p class="subtitle">Faça login para acessar o painel de gestão Meraki VitalSync</p>
+            </div>
+        </section>
+
+        <section>
+            <form action="#" method="post">
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                </div>
+
+                <div>
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" required>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="lembrar" name="lembrar"> Lembrar de Mim <p><a
+                            href="#recuperar-senha">Esqueceu sua senha?</a></p>
+                </div>
+
+                <button type="submit">Entrar</button>
+            </form>
+
+            <br>
+            <div style="text-align: right;">
+                <p>Não tem uma conta? <a href="#cadastro">Cadastre-se</a></p>
+            </div>
+        </section>
+
+        <section class="text-center">
+            <h2>Login Corporativo</h2>
+            <p>Empresas parceiras podem acessar o painel administrativo completo com relatórios e análises detalhadas.
+            </p>
+            <button>Acesso Corporativo</button>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <h4> Transformando bem-estar corporativo em vantagem competitiva através de dados estratégicos. </h4>
+        </div>
+
+        <br>
+
+        <div>
+            <a href="TermosDeUso.html">Termos de Uso</a> ׀
+            <a href="PoliticaDePrivacidade.html">Política de Privacidade</a> ׀
+            <a href="Suporte.html">Suporte</a> ׀
+            <a href="Contato.html">Fale Conosco</a> ׀
+            <a href="FAQ.html">FAQ</a> ׀
+            <a href="SobreNos.html">Sobre Nós</a> ׀
+            <a href="TrabalheConosco.html">Trabalhe Conosco</a>
+        </div>
+
+        <div>
+            <address>
+                <p> vendas@merakivitalsync.com.br | suporte@merakivitalsync.com.br </p>
+                <p> (11) 3000-0000 | (11) 3000-0001 </p>
+                <p> Bela Vista, São Paulo - SP Brasil </p>
+            </address>
+        </div>
+        <p>Meraki Vitalsync &copy; 2025. Tecnologia que inspira movimento</p>
+    </footer>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,1022 @@
+/* ============================================ MERAKI VITALSYNC - FOLHA DE ESTILO UNIFICADA ============================================ */
+
+/* ============================================ 1. VARIÁVEIS CSS & TEMAS ============================================ */
+
+/* Tema Claro (Padrão) */
+:root {
+    /* Cores Primárias */
+    --primary-blue: #4a90e2;
+    --primary-dark: #151b3d;
+    --secondary-blue: #3a7bc8;
+
+    /* Cores de Fundo */
+    --bg-light: whitesmoke;
+    --bg-white: #ffffff;
+    --bg-section: #f8f9fa;
+
+    /* Cores de Texto */
+    --text-dark: #151b3d;
+    --text-medium: #666;
+    --text-light: #333;
+
+    /* Cores de Destaque */
+    --accent-hover: rgba(74, 144, 226, 0.3);
+    --accent-light: rgba(74, 144, 226, 0.1);
+
+    /* Bordas e Sombras */
+    --border-color: #e9ecef;
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.15);
+
+    /* form input */
+    --input-text: black;
+
+    /* Espaçamento */
+    --spacing-xs: 5px;
+    --spacing-sm: 10px;
+    --spacing-md: 20px;
+    --spacing-lg: 30px;
+    --spacing-xl: 40px;
+}
+
+/* Tema Escuro */
+[data-theme="dark"] {
+    /* Cores Primárias - Ajustadas para melhor contraste */
+    --primary-blue: #4d7f71;
+    /* Cor do texto, deixamos ele com um tom verde inves de azul, mas mantemos os nome da variavel para o mesmo. */
+    --primary-dark: #0d1712;
+    --secondary-blue: #829f97;
+
+    /* Cores de Fundo */
+    --bg-light: #0d1117;
+    --bg-white: #161b22;
+    --bg-section: #21262d;
+
+    /* Cores de Texto */
+    --text-dark: #e6edf3;
+    --text-medium: #c9d1d9;
+    --text-light: #e6edf3;
+
+    /* Cores de Destaque */
+    --accent-hover: rgba(91, 163, 255, 0.3);
+    --accent-light: rgba(91, 163, 255, 0.15);
+
+    /* Bordas e Sombras */
+    --border-color: #30363d;
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.5);
+
+    /* form input */
+    --input-text: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ============================================ 2. ESTILOS BASE ============================================ */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* ============================================ 3. CABEÇALHO E NAVEGAÇÃO ============================================ */
+header {
+    background-color: var(--bg-light);
+    padding: 10px 0;
+    border-bottom: 3px solid var(--primary-blue);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 var(--spacing-md);
+}
+
+/* Estilização do Logo */
+.nome-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.logoBackground {
+    border-radius: 8px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.nome-logo:hover {
+    transform: scale(1.05);
+}
+
+.nome-logo img {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* Navegação */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: var(--spacing-xs);
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: var(--text-dark);
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: var(--accent-hover);
+}
+
+nav ul li a.active {
+    background-color: var(--primary-blue);
+    color: #ffffff;
+}
+
+nav ul li a.active:hover {
+    background-color: var(--secondary-blue);
+    transform: scale(1.05);
+}
+
+/* Botão de Alternância de Tema */
+#theme-toggle {
+    background-color: transparent;
+    border: 2px solid var(--primary-blue);
+    color: var(--text-dark);
+    font-size: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    margin-left: 15px;
+    padding: 0;
+}
+
+#theme-toggle:hover {
+    background-color: var(--primary-blue);
+    transform: scale(1.1);
+}
+
+#theme-toggle:active {
+    transform: scale(0.95);
+}
+
+.selected-page {
+    color: var(--text-dark);
+    background-color: var(--secondary-blue);
+    border-bottom: 2px solid var(--primary-dark); /* Adjust thickness, style, and color */
+}
+/* ============================================ 4. CONTEÚDO PRINCIPAL E SEÇÕES ============================================ */
+main {
+    max-width: 1200px;
+    margin: var(--spacing-lg) auto;
+    padding: var(--spacing-md);
+}
+
+.wide-section {
+    background-color: var(--bg-white);
+    padding: 35px;
+    margin-bottom: var(--spacing-lg);
+    border-radius: 12px;
+    border: 2px solid var(--primary-blue);
+    box-shadow: var(--shadow-md);
+}
+
+/* Expandir main quando contém wide-section */
+main:has(.wide-section) {
+    max-width: 1700px;
+}
+
+section:not(.wide-section) {
+    background-color: var(--bg-white);
+    padding: 35px;
+    margin-bottom: var(--spacing-lg);
+    border-radius: 12px;
+    border: 2px solid var(--primary-blue);
+    box-shadow: var(--shadow-md);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Seção Hero (para páginas como SobreNos, Home) */
+section.hero-title,
+section:first-child.hero-title {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, #2d3561 100%);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 60px var(--spacing-md);
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: var(--spacing-md);
+    color: white;
+}
+
+.hero-content .subtitle {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: var(--secondary-blue);
+}
+
+.hero-content .intro-text {
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 0 auto;
+    max-width: 800px;
+    color: #fff;
+}
+
+/* ============================================ 5. TIPOGRAFIA ============================================ */
+h1 {
+    font-size: 36px;
+    margin-bottom: var(--spacing-md);
+    line-height: 1.3;
+    color: var(--text-dark);
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: var(--text-dark);
+    text-align: center;
+}
+
+h3 {
+    font-size: 22px;
+    color: var(--text-dark);
+    margin-bottom: 12px;
+}
+
+h4 {
+    font-size: 18px;
+    color: var(--text-dark);
+    margin-bottom: var(--spacing-sm);
+    margin-top: var(--spacing-md);
+}
+
+p {
+    line-height: 1.8;
+    color: var(--text-medium);
+    margin-bottom: var(--spacing-sm);
+    font-size: 16px;
+}
+
+/* ============================================ 6. ARTIGOS E BLOCOS DE CONTEÚDO ============================================ */
+article {
+    background-color: var(--bg-section);
+    padding: var(--spacing-lg);
+    border-radius: 10px;
+    border-left: 5px solid var(--primary-blue);
+    margin-top: var(--spacing-lg);
+    margin-bottom: 25px;
+}
+
+article h3 {
+    color: var(--primary-blue);
+    margin-bottom: 15px;
+}
+
+article h4 {
+    color: var(--text-dark);
+}
+
+/* ============================================ 7. LISTAS ============================================ */
+ul {
+    padding-left: var(--spacing-md);
+    margin-bottom: 15px;
+}
+
+ul li {
+    margin-bottom: 8px;
+    color: var(--text-medium);
+}
+
+/* Lista Ordenada com Contadores Personalizados (estilo da página Home) */
+ol {
+    list-style: none;
+    counter-reset: step-counter;
+}
+
+ol li {
+    counter-increment: step-counter;
+    margin-bottom: 25px;
+    padding: 25px;
+    padding-left: 80px;
+    background-color: var(--bg-section);
+    border-radius: 10px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+/* Hover dos passos na home - tema adaptativo */
+ol li:hover {
+    transform: translateX(10px);
+    background-color: var(--primary-blue);
+}
+
+ol li::before {
+    content: counter(step-counter);
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    box-shadow: 0 3px 8px rgba(74, 144, 226, 0.4);
+}
+
+/* ============================================ 8. FORMULÁRIOS ============================================ */
+form {
+    max-width: 700px;
+    margin: 0px 5px;
+}
+
+form div {
+    margin-bottom: var(--spacing-md);
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: var(--text-dark);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="url"],
+input[type="file"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus,
+input[type="url"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--primary-blue);
+    background-color: rgba(74, 144, 226, 0.05);
+    color: var(--input-text);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Estilização de Checkbox */
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.option-fix {
+    background-color: var(--primary-blue);
+}
+/* ============================================ 9. BOTÕES ============================================ */
+button,
+.btn,
+a.btn {
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+button:hover,
+.btn:hover,
+a.btn:hover {
+    background-color: var(--secondary-blue);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Botão Secundário */
+.button-group {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-secondary {
+    border: 2px solid var(--primary-blue);
+    padding: 12px 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-style: normal;
+    text-decoration: none;
+    color: var(--primary-blue);
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-blue);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* ============================================ 10. TABELAS ============================================ */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: var(--spacing-md) 0 var(--spacing-xl) 0;
+    box-shadow: var(--shadow-md);
+    background-color: var(--bg-white);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table thead tr {
+    background-color: var(--primary-blue);
+    color: white;
+}
+
+table th,
+table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+table th {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+table tbody tr:hover {
+    background-color: var(--bg-section);
+}
+
+table tbody tr td:first-child {
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+/* ============================================ 11. CARTÕES E PREÇOS (página Planos) ============================================ */
+.pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-lg);
+    justify-content: center;
+}
+
+/* Múltiplos artigos em uma seção devem usar flex */
+section:has(> article + article) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-lg);
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+section:has(> article + article)>h2 {
+    width: 100%;
+    flex-basis: 100%;
+}
+
+/* Desabilitar flex para páginas de documentos legais (Política de Privacidade, Termos de Uso) */
+section.no-flex:has(> article + article) {
+    display: block;
+}
+
+section.no-flex article {
+    flex: none;
+    width: 100%;
+    margin-bottom: var(--spacing-lg);
+}
+
+/* Lista em 2 colunas para planos corporativos (Business e Enterprise) */
+article.corpo-plan ul {
+    column-count: 2;
+    column-gap: 20px;
+}
+
+article.corpo-plan ul li {
+    break-inside: avoid;
+    page-break-inside: avoid;
+}
+
+/* Seção mais larga APENAS para planos corporativos */
+main>section.wide-section {
+    max-width: 3000px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Garantir que os cards tenham a mesma altura na seção wide */
+main>section.wide-section:has(> article + article) {
+    align-items: stretch;
+}
+
+/* Cards dos planos corporativos - mesma altura com botões alinhados */
+article.corpo-plan {
+    flex: 1 1 400px !important;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Empurrar a seção de investimento para baixo */
+.corpo-plan h4:last-of-type {
+    margin-top: auto;
+    padding-top: var(--spacing-lg);
+}
+
+
+.pricing-card,
+section article {
+    background: var(--bg-white);
+    padding: var(--spacing-lg);
+    border-radius: 10px;
+    border: 2px solid var(--border-color);
+    box-shadow: var(--shadow-md);
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Override para planos corporativos - permitir crescimento */
+main>section.wide-section article.corpo-plan {
+    flex: 1 1 400px;
+    max-width: none;
+}
+
+/* Hover apenas para cards de planos e artigos específicos (não para home) */
+.pricing-card:hover,
+section article.corpo-plan:hover {
+    border-color: var(--primary-blue);
+    box-shadow: 0 8px 20px rgba(30, 144, 255, 0.3);
+    transform: translateY(-5px);
+}
+
+/* Remover hover de artigos na home */
+section.confianca article:hover {
+    border-color: var(--border-color);
+    box-shadow: var(--shadow-md);
+    transform: none;
+}
+
+/* Estilos de solicitação de cotação */
+.secondary-section {
+    text-align: center;
+    padding: var(--spacing-xl) 0;
+}
+
+.centered-text {
+    max-width: 600px;
+    margin: 0 auto var(--spacing-lg);
+}
+
+
+/* ============================================ 12. ITENS DE FAQ E SUPORTE ============================================ */
+.faq-item,
+.support-item {
+    background-color: var(--bg-section);
+    margin-bottom: 25px;
+    padding: var(--spacing-md);
+    border-radius: 10px;
+    border-left: 4px solid var(--primary-blue);
+}
+
+.faq-question {
+    font-weight: bold;
+    color: var(--text-dark);
+    font-size: 18px;
+    margin-bottom: var(--spacing-sm);
+}
+
+.faq-answer {
+    margin-top: var(--spacing-sm);
+    padding-left: 15px;
+    border-left: 2px solid var(--border-color);
+    color: var(--text-medium);
+}
+
+/* ============================================ 13. IMAGENS E MÍDIA ============================================ */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Container de Logos (para múltiplos logos) */
+.logos-container {
+    display: flex;
+    gap: var(--spacing-lg);
+    margin: var(--spacing-xl) 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.logos-container img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid var(--primary-blue);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* Hover dos logos das academias - tema adaptativo */
+.logos-container img:hover {
+    transform: scale(1.1) rotate(2deg);
+    box-shadow: 0 8px 25px rgba(74, 144, 226, 0.4);
+    border-color: var(--secondary-blue);
+}
+
+/* Dark mode - sombra verde */
+[data-theme="dark"] .logos-container img:hover {
+    box-shadow: 0 8px 25px rgba(77, 127, 113, 0.4);
+    border-color: var(--primary-blue);
+}
+
+/* ============================================ 13.5 SEÇÃO DE VÍDEO ============================================ */
+.video-showcase {
+    text-align: center;
+    padding: var(--spacing-xl) var(--spacing-md);
+    background: linear-gradient(135deg, var(--bg-section), var(--bg-light));
+    border-radius: 15px;
+    margin: var(--spacing-xl) 0;
+}
+
+.video-showcase h2 {
+    font-size: 32px;
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-dark);
+}
+
+.video-showcase p {
+    font-size: 18px;
+    color: var(--text-medium);
+    margin-bottom: var(--spacing-lg);
+}
+
+.video-container {
+    /* Nós utilizamos a posição relativa para que o vídeo seja responsivo dentro da seção que se encontra, enquanto absolute é para que o vídeo seja responsivo dentro do viewport que se encontra */
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    /* overflow é utilizado para esconder o conteúdo que ultrapassa o tamanho do container */
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+/* ============================================ 14. SEÇÕES ESPECIAIS (específico para SobreNos) ============================================ */
+.conteudo-historia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-md);
+    flex-wrap: wrap;
+    gap: var(--spacing-lg);
+}
+
+.conteudo-historia .texto {
+    flex: 1;
+    max-width: 50%;
+    min-width: 300px;
+}
+
+.conteudo-historia img {
+    max-width: 45%;
+    height: auto;
+    flex-shrink: 0;
+    border: 2px solid var(--primary-blue);
+    border-radius: 15px;
+}
+
+.pilares {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+    margin-top: var(--spacing-xl);
+}
+
+.pilares article {
+    flex: 1 1 250px;
+    max-width: 300px;
+}
+
+/* Container para botões centralizados */
+.container-centralizado {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+    margin: var(--spacing-md) 0;
+}
+
+/* ============================================ 15. RODAPÉ ============================================ */
+footer {
+    background-color: var(--primary-dark);
+    padding: var(--spacing-lg) var(--spacing-md);
+    border-top: 3px solid var(--primary-blue);
+    margin-top: 50px;
+    color: var(--bg-light);
+    color: whitesmoke;
+}
+
+footer div {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--primary-blue);
+    transition: all 0.3s ease;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+footer a:hover {
+    color: var(--primary-blue);
+    background-color: var(--accent-light);
+}
+
+footer p {
+    text-align: center;
+    color: var(--bg-light);
+    margin-top: var(--spacing-md);
+    font-size: 14px;
+    color: whitesmoke;
+
+}
+
+footer h3,
+footer h4 {
+    color: var(--bg-light);
+    margin: 15px 0;
+    color: whitesmoke;
+
+}
+
+footer address {
+    font-style: normal;
+    color: var(--bg-light);
+    margin: var(--spacing-md) 0;
+    color: whitesmoke;
+}
+
+/* ============================================ 16. CLASSES UTILITÁRIAS ============================================ */
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.mt-sm {
+    margin-top: var(--spacing-sm);
+}
+
+.mt-md {
+    margin-top: var(--spacing-md);
+}
+
+.mt-lg {
+    margin-top: var(--spacing-lg);
+}
+
+.mt-xl {
+    margin-top: var(--spacing-xl);
+}
+
+.mb-sm {
+    margin-bottom: var(--spacing-sm);
+}
+
+.mb-md {
+    margin-bottom: var(--spacing-md);
+}
+
+.mb-lg {
+    margin-bottom: var(--spacing-lg);
+}
+
+.mb-xl {
+    margin-bottom: var(--spacing-xl);
+}
+
+/* ============================================ 17. DESIGN RESPONSIVO ============================================ */
+@media (max-width: 992px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        margin: 0 5px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    main {
+        padding: var(--spacing-sm);
+    }
+
+    section {
+        padding: var(--spacing-md);
+    }
+
+    .pricing-container,
+    section:has(> article + article) {
+        flex-direction: column;
+    }
+
+    .pricing-card,
+    section article {
+        flex: 1 1 100%;
+    }
+
+    .conteudo-historia {
+        flex-direction: column;
+    }
+
+    .conteudo-historia .texto,
+    .conteudo-historia img {
+        max-width: 100%;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    ol li {
+        padding-left: 70px;
+    }
+
+    ol li::before {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        left: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-container {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+
+    nav ul li a {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-content .subtitle {
+        font-size: 18px;
+    }
+
+    .logos-container img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+
+/* ============================================ 18. ESTILOS DE IMPRESSÃO ============================================ */
+@media print {
+
+    header,
+    footer,
+    nav,
+    .enabled {
+        display: none;
+    }
+
+    body {
+        background-color: white;
+    }
+
+    section {
+        border: 1px solid #000;
+        box-shadow: none;
+        page-break-inside: avoid;
+    }
+}

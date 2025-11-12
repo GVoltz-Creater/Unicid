@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Orçamento e Proposta Técnica de Hospedagem</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #151b3d;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 28px;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        section {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #4a90e2;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #151b3d;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #4a90e2;
+        }
+
+        h3 {
+            color: #4a90e2;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        dl {
+            margin: 15px 0;
+        }
+
+        dt {
+            font-weight: bold;
+            color: #151b3d;
+            margin-top: 10px;
+        }
+
+        dd {
+            margin-left: 20px;
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table th,
+        table td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        table th {
+            background-color: #4a90e2;
+            color: white;
+            font-weight: bold;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        table tr:hover {
+            background-color: #f0f0f0;
+        }
+
+        ul,
+        ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #666;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: #151b3d;
+        }
+
+        @media print {
+            body {
+                background-color: white;
+            }
+
+            section {
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>RELATÓRIO DE ORÇAMENTO E PROPOSTA TÉCNICA DE HOSPEDAGEM</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Informações do Projeto</h2>
+            <dl>
+                <dt><strong>Projeto:</strong></dt>
+                <dd>Desenvolvimento de Website E-commerce</dd>
+
+                <dt><strong>Tema:</strong></dt>
+                <dd>Pulseira Inteligente (Fitness Tracker)</dd>
+
+                <dt><strong>Marca:</strong></dt>
+                <dd>Meraki VitalSync</dd>
+
+                <dt><strong>Entrega:</strong></dt>
+                <dd>1ª Entrega (Foco na Estrutura HTML)</dd>
+
+                <dt><strong>Objetivo:</strong></dt>
+                <dd>Definir as especificações e o orçamento para o registro de domínio e a contratação de serviço de
+                    hospedagem web, garantindo a disponibilidade e o desempenho do projeto em HTML.</dd>
+
+                <dt><strong>Data do Relatório:</strong></dt>
+                <dd>12/10/2025</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2>1. Análise de Opções de Hospedagem Web Compartilhada (Valores em BRL)</h2>
+            <p>Foram analisadas as principais ofertas de hospedagem compartilhada no mercado brasileiro, considerando as
+                necessidades iniciais do projeto (site estático/baixo tráfego).</p>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Provedor</th>
+                        <th>Plano</th>
+                        <th>Armazenamento</th>
+                        <th>Tráfego (Banda)</th>
+                        <th>Suporte</th>
+                        <th>Preço Inicial (Mensal)</th>
+                        <th>Preço Renovação (Mensal)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="3">Hostinger</td>
+                        <td>Single</td>
+                        <td>10 GB SSD</td>
+                        <td>Ilimitado</td>
+                        <td>Chat/Ticket 24h</td>
+                        <td>R$ 5,99</td>
+                        <td>R$ 23,99</td>
+                    </tr>
+                    <tr>
+                        <td>Premium</td>
+                        <td>25 GB SSD</td>
+                        <td>Ilimitado</td>
+                        <td>Chat/Ticket 24h</td>
+                        <td>R$ 10,99</td>
+                        <td>R$ 38,99</td>
+                    </tr>
+                    <tr>
+                        <td>Business</td>
+                        <td>50 GB NVMe</td>
+                        <td>Ilimitado</td>
+                        <td>Chat/Ticket 24h</td>
+                        <td>R$ 13,99</td>
+                        <td>R$ 59,99</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">HostGator</td>
+                        <td>Plano P</td>
+                        <td>Não Divulgado</td>
+                        <td>Ilimitado</td>
+                        <td>24/7</td>
+                        <td>R$ 26,69</td>
+                        <td>R$ 31,39</td>
+                    </tr>
+                    <tr>
+                        <td>Plano M</td>
+                        <td>Não Divulgado</td>
+                        <td>Ilimitado</td>
+                        <td>24/7</td>
+                        <td>R$ 36,39</td>
+                        <td>R$ 42,79</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Locaweb</td>
+                        <td>Hospedagem I</td>
+                        <td>SSD Ilimitado</td>
+                        <td>Ilimitado Nacional</td>
+                        <td>24/7</td>
+                        <td>R$ 5,90</td>
+                        <td>R$ 5,90</td>
+                    </tr>
+                    <tr>
+                        <td>Hospedagem II</td>
+                        <td>SSD Ilimitado</td>
+                        <td>Ilimitado Nacional</td>
+                        <td>24/7</td>
+                        <td>R$ 10,90</td>
+                        <td>R$ 10,90</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><strong>Observação:</strong> Todos os planos listados incluem certificado SSL grátis, essencial para a
+                segurança de um e-commerce.</p>
+        </section>
+
+        <section>
+            <h2>2. Análise de Opções de Registro de Domínio</h2>
+            <p>O nome de domínio Meraki VitalSync está disponível para registro nas principais extensões.</p>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Extensão</th>
+                        <th>Tipo de Reconhecimento</th>
+                        <th>Faixa de Preço Anual (BRL)</th>
+                        <th>Vantagem Estratégica</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>.com</td>
+                        <td>Global (Maior credibilidade)</td>
+                        <td>R$ 40,00 – R$ 100,00</td>
+                        <td>Ideal para alcance internacional e memorização.</td>
+                    </tr>
+                    <tr>
+                        <td>.com.br</td>
+                        <td>Nacional (Foco em Brasil)</td>
+                        <td>R$ 40,00 – R$ 100,00</td>
+                        <td>Necessário para empresas com atuação exclusiva no país.</td>
+                    </tr>
+                    <tr>
+                        <td>.br</td>
+                        <td>Nacional (Maior formalidade)</td>
+                        <td>R$ 40,00 – R$ 364,00</td>
+                        <td>Geralmente utilizado por órgãos ou projetos específicos.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>3. Proposta de Orçamento e Recomendação Técnica</h2>
+            <p>Com base na análise de custo-benefício, previsibilidade de preço e recursos (SSD Ilimitado e Suporte
+                Nacional 24/7), a recomendação técnica para o lançamento do projeto é a seguinte:</p>
+
+            <h3>Hospedagem Recomendada: Locaweb Hospedagem I ou II</h3>
+            <p><strong>Justificativa:</strong> Os planos da Locaweb oferecem o melhor custo-benefício em longo prazo,
+                com preço de renovação idêntico ao preço inicial (R$ 5,90/mês ou R$ 10,90/mês), eliminando o alto
+                aumento de custo comum em outros provedores após o primeiro ano. O SSD Ilimitado atende plenamente o
+                projeto, e o Suporte Nacional é um diferencial em caso de indisponibilidade.</p>
+
+            <h3>Domínio Recomendado: MerakiVitalSync.com</h3>
+            <p><strong>Justificativa:</strong> A extensão .com é a mais reconhecida globalmente, conferindo maior
+                credibilidade ao e-commerce e garantindo que não haja restrições geográficas para acesso ou expansão
+                futura.</p>
+
+            <h3>Sumário da Projeção de Custo Anual</h3>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Plano Recomendado</th>
+                        <th>Custo Mensal (Aprox.)</th>
+                        <th>Custo Anual (Projetado)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hospedagem</td>
+                        <td>Locaweb Hospedagem I (R$ 5,90/mês)</td>
+                        <td>R$ 5,90</td>
+                        <td>R$ 70,80</td>
+                    </tr>
+                    <tr>
+                        <td>Domínio</td>
+                        <td>.com (Registro Anual)</td>
+                        <td>–</td>
+                        <td>R$ 40,00 – R$ 100,00</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Custo Anual Total Estimado (Mínimo)</strong></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td><strong>R$ 110,80</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Referências</h2>
+            <ul>
+                <li>Tech Minuto. Melhores Empresas de Hospedagem de Sites.</li>
+                <li>Hostinger Brasil. Hospedagem de Sites.</li>
+                <li>HostGator Brasil. Preços HostGator.</li>
+                <li>Locaweb. Hospedagem de Sites.</li>
+                <li>Registro.br. Busca de Domínio (merakivitalsync).</li>
+                <li>Wise. Conversor de Moedas (USD/BRL).</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Relatório gerado em 12/10/2025</p>
+    </footer>
+</body>
+
+</html>

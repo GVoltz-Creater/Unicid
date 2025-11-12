@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação CSS - Meraki VitalSync</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #151b3d;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 28px;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #4a90e2;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #151b3d;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #4a90e2;
+        }
+
+        h3 {
+            color: #4a90e2;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        h4 {
+            color: #151b3d;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+
+        pre {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 3px solid #4a90e2;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        code {
+            background-color: #f8f9fa;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            color: #d63384;
+        }
+
+        pre code {
+            background-color: transparent;
+            padding: 0;
+            color: #333;
+        }
+
+        ul,
+        ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #666;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: #151b3d;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table th,
+        table td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        table th {
+            background-color: #4a90e2;
+            color: white;
+            font-weight: bold;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .color-box {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 3px;
+            border: 1px solid #ddd;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+
+        @media print {
+            body {
+                background-color: white;
+            }
+
+            section {
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>DOCUMENTAÇÃO CSS - MERAKI VITALSYNC</h1>
+        <p>Sistema de Estilização Unificado</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Visão Geral</h2>
+            <p>Este documento descreve o sistema CSS unificado para o website Meraki VitalSync. O stylesheet consolidado
+                combina as melhores práticas de todos os arquivos CSS individuais em um sistema de design coeso.</p>
+        </section>
+
+        <section>
+            <h2>Esquema de Cores</h2>
+            <p><strong>Tema Principal: Azul & Whitesmoke</strong></p>
+
+            <h3>Variáveis de Cor</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Variável CSS</th>
+                        <th>Cor</th>
+                        <th>Uso</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>--primary-blue</code></td>
+                        <td><span class="color-box" style="background-color: #4a90e2;"></span>#4a90e2</td>
+                        <td>Cor principal da marca, botões, bordas</td>
+                    </tr>
+                    <tr>
+                        <td><code>--primary-dark</code></td>
+                        <td><span class="color-box" style="background-color: #151b3d;"></span>#151b3d</td>
+                        <td>Fundos escuros, texto principal</td>
+                    </tr>
+                    <tr>
+                        <td><code>--secondary-blue</code></td>
+                        <td><span class="color-box" style="background-color: #3a7bc8;"></span>#3a7bc8</td>
+                        <td>Estados hover, acentos</td>
+                    </tr>
+                    <tr>
+                        <td><code>--bg-light</code></td>
+                        <td><span class="color-box" style="background-color: whitesmoke;"></span>whitesmoke</td>
+                        <td>Fundo da página</td>
+                    </tr>
+                    <tr>
+                        <td><code>--bg-white</code></td>
+                        <td><span class="color-box" style="background-color: #ffffff;"></span>#ffffff</td>
+                        <td>Fundo de seções</td>
+                    </tr>
+                    <tr>
+                        <td><code>--bg-section</code></td>
+                        <td><span class="color-box" style="background-color: #f8f9fa;"></span>#f8f9fa</td>
+                        <td>Fundo de artigos</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Estrutura de Arquivos</h2>
+
+            <h3>Arquivos Atuais</h3>
+            <ul>
+                <li><strong>style-unified.css</strong> - Stylesheet consolidado (RECOMENDADO)</li>
+                <li><strong>style.css</strong> - Stylesheet base original</li>
+                <li><strong>style-old-backup.css</strong> - Backup do style.css original</li>
+                <li>Arquivos CSS individuais (home.css, contato.css, etc.) - Podem ser descontinuados</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Componentes de Layout</h2>
+
+            <h3>Header & Navegação</h3>
+            <pre><code>&lt;header&gt;
+    &lt;nav&gt;
+        &lt;a href="Home.html" class="nome-logo"&gt;
+            &lt;img src="imgs/logo.png" alt="Logo"&gt;
+        &lt;/a&gt;
+        &lt;div class="header-container"&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="page.html"&gt;Link&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="page.html" class="active"&gt;Link Ativo&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;</code></pre>
+
+            <h3>Conteúdo Principal</h3>
+            <pre><code>&lt;main&gt;
+    &lt;section&gt;
+        &lt;!-- Conteúdo aqui --&gt;
+    &lt;/section&gt;
+&lt;/main&gt;</code></pre>
+
+            <h3>Footer</h3>
+            <pre><code>&lt;footer&gt;
+    &lt;div&gt;
+        &lt;a href="page.html"&gt;Link&lt;/a&gt; ׀
+        &lt;a href="page.html"&gt;Link&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;p&gt;Texto de copyright&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Tipografia</h2>
+
+            <h3>Títulos</h3>
+            <ul>
+                <li><code>h1</code> - 36px, título principal da página</li>
+                <li><code>h2</code> - 28px, títulos de seção (centralizados)</li>
+                <li><code>h3</code> - 22px, títulos de subseção</li>
+                <li><code>h4</code> - 18px, títulos de artigos</li>
+            </ul>
+
+            <h3>Parágrafos</h3>
+            <ul>
+                <li>Padrão: 16px, line-height 1.8</li>
+                <li>Cor: <code>--text-medium</code> (#666)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Componentes de Conteúdo</h2>
+
+            <h3>Artigos</h3>
+            <pre><code>&lt;article&gt;
+    &lt;h3&gt;Título do Artigo&lt;/h3&gt;
+    &lt;p&gt;Conteúdo do artigo...&lt;/p&gt;
+&lt;/article&gt;</code></pre>
+            <p>Características: Fundo cinza claro, borda esquerda azul de 5px, padding de 30px, border-radius de 10px
+            </p>
+
+            <h3>Itens de FAQ</h3>
+            <pre><code>&lt;article class="faq-item"&gt;
+    &lt;p class="faq-question"&gt;Pergunta?&lt;/p&gt;
+    &lt;div class="faq-answer"&gt;
+        &lt;p&gt;Resposta...&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/article&gt;</code></pre>
+
+            <h3>Itens de Suporte</h3>
+            <pre><code>&lt;article class="support-item"&gt;
+    &lt;h3&gt;Tópico de Suporte&lt;/h3&gt;
+    &lt;p&gt;Conteúdo de suporte...&lt;/p&gt;
+&lt;/article&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Formulários</h2>
+
+            <h3>Estrutura Básica de Formulário</h3>
+            <pre><code>&lt;form action="#" method="post"&gt;
+    &lt;div&gt;
+        &lt;label for="name"&gt;Nome:&lt;/label&gt;
+        &lt;input type="text" id="name" name="name" required&gt;
+    &lt;/div&gt;
+    
+    &lt;div&gt;
+        &lt;label for="email"&gt;Email:&lt;/label&gt;
+        &lt;input type="email" id="email" name="email" required&gt;
+    &lt;/div&gt;
+    
+    &lt;div&gt;
+        &lt;label for="message"&gt;Mensagem:&lt;/label&gt;
+        &lt;textarea id="message" name="message" rows="6"&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+    
+    &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+
+            <h3>Elementos de Formulário</h3>
+            <ul>
+                <li>Todos os inputs: 100% de largura, 12px de padding, borda de 2px</li>
+                <li>Estado de foco: Borda azul, fundo azul claro</li>
+                <li>Botões: Fundo azul, texto branco, efeitos hover</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Botões</h2>
+
+            <h3>Botão Primário</h3>
+            <pre><code>&lt;button&gt;Botão Primário&lt;/button&gt;
+&lt;a href="#" class="btn"&gt;Link Botão&lt;/a&gt;</code></pre>
+
+            <h3>Botão Secundário</h3>
+            <pre><code>&lt;button class="btn-secondary"&gt;Secundário&lt;/button&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Tabelas</h2>
+
+            <h3>Tabela Comparativa (Página Planos)</h3>
+            <pre><code>&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Recurso&lt;/th&gt;
+            &lt;th&gt;Plano 1&lt;/th&gt;
+            &lt;th&gt;Plano 2&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Nome do recurso&lt;/td&gt;
+            &lt;td&gt;Valor 1&lt;/td&gt;
+            &lt;td&gt;Valor 2&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Listas</h2>
+
+            <h3>Listas Não Ordenadas</h3>
+            <ul>
+                <li>Marcadores padrão</li>
+                <li>20px de padding à esquerda</li>
+                <li>8px de margem inferior por item</li>
+            </ul>
+
+            <h3>Listas Ordenadas (com contadores personalizados)</h3>
+            <pre><code>&lt;ol&gt;
+    &lt;li&gt;
+        &lt;h3&gt;Título do Passo&lt;/h3&gt;
+        &lt;p&gt;Descrição do passo...&lt;/p&gt;
+    &lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+            <p>Características: Círculos numerados personalizados (gradiente azul), efeito hover que desliza para a
+                direita, perfeito para processos passo a passo</p>
+        </section>
+
+        <section>
+            <h2>Componentes Especiais</h2>
+
+            <h3>Seção Hero (Home, SobreNos)</h3>
+            <pre><code>&lt;section class="hero-title"&gt;
+    &lt;div class="hero-content"&gt;
+        &lt;h1&gt;Título Principal&lt;/h1&gt;
+        &lt;p class="subtitle"&gt;Subtítulo&lt;/p&gt;
+        &lt;p class="intro-text"&gt;Texto de introdução...&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+
+            <h3>Container de Logos</h3>
+            <pre><code>&lt;div class="logos-container"&gt;
+    &lt;img src="logo1.jpg" alt="Logo 1"&gt;
+    &lt;img src="logo2.jpg" alt="Logo 2"&gt;
+&lt;/div&gt;</code></pre>
+
+            <h3>Container de Botões Centralizados</h3>
+            <pre><code>&lt;div class="container-centralizado"&gt;
+    &lt;a href="#" class="btn"&gt;Botão 1&lt;/a&gt;
+    &lt;a href="#" class="btn"&gt;Botão 2&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Classes Utilitárias</h2>
+
+            <h3>Alinhamento de Texto</h3>
+            <ul>
+                <li><code>.text-center</code> - Centralizar texto</li>
+                <li><code>.text-left</code> - Alinhar à esquerda</li>
+                <li><code>.text-right</code> - Alinhar à direita</li>
+            </ul>
+
+            <h3>Espaçamento</h3>
+            <h4>Margem Superior</h4>
+            <ul>
+                <li><code>.mt-sm</code> - 10px</li>
+                <li><code>.mt-md</code> - 20px</li>
+                <li><code>.mt-lg</code> - 30px</li>
+                <li><code>.mt-xl</code> - 40px</li>
+            </ul>
+
+            <h4>Margem Inferior</h4>
+            <ul>
+                <li><code>.mb-sm</code> - 10px</li>
+                <li><code>.mb-md</code> - 20px</li>
+                <li><code>.mb-lg</code> - 30px</li>
+                <li><code>.mb-xl</code> - 40px</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Breakpoints Responsivos</h2>
+
+            <h3>Tablet (max-width: 992px)</h3>
+            <ul>
+                <li>Navegação torna-se vertical</li>
+                <li>Tamanhos de fonte reduzidos</li>
+                <li>Layouts de coluna única</li>
+                <li>Círculos numerados menores em listas ordenadas</li>
+            </ul>
+
+            <h3>Mobile (max-width: 600px)</h3>
+            <ul>
+                <li>Header torna-se vertical</li>
+                <li>Links de navegação menores</li>
+                <li>Tamanho de texto hero reduzido</li>
+                <li>Imagens de logo menores</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Guia de Migração</h2>
+
+            <h3>Passo 1: Backup</h3>
+            <p>Todos os arquivos CSS originais foram preservados. O <code>style.css</code> original está em backup como
+                <code>style-old-backup.css</code>.
+            </p>
+
+            <h3>Passo 2: Atualizar Arquivos HTML</h3>
+            <p>Altere todos os arquivos HTML para usar o stylesheet unificado:</p>
+            <pre><code>&lt;!-- DE: --&gt;
+&lt;link rel="stylesheet" href="style/home.css"&gt;
+
+&lt;!-- PARA: --&gt;
+&lt;link rel="stylesheet" href="style/style-unified.css"&gt;</code></pre>
+
+            <h3>Passo 3: Testar Cada Página</h3>
+            <ol>
+                <li>Abrir cada arquivo HTML em um navegador</li>
+                <li>Verificar layout, cores e interações</li>
+                <li>Testar comportamento responsivo</li>
+                <li>Verificar se formulários e botões funcionam corretamente</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Compatibilidade de Navegadores</h2>
+            <p>Testado e compatível com:</p>
+            <ul>
+                <li>Chrome 90+</li>
+                <li>Firefox 88+</li>
+                <li>Safari 14+</li>
+                <li>Edge 90+</li>
+            </ul>
+
+            <p>Usa recursos CSS modernos:</p>
+            <ul>
+                <li>Variáveis CSS (Custom Properties)</li>
+                <li>Flexbox</li>
+                <li>Transições CSS</li>
+                <li>Border-radius</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Acessibilidade</h2>
+            <ul>
+                <li>Estrutura HTML semântica</li>
+                <li>Contraste de cores suficiente (compatível com WCAG AA)</li>
+                <li>Estados de foco em elementos interativos</li>
+                <li>Suporte ao widget VLibras mantido</li>
+                <li>Stylesheet de impressão incluído</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Performance</h2>
+            <ul>
+                <li>Arquivo CSS único reduz requisições HTTP</li>
+                <li>Uso mínimo de propriedades pesadas</li>
+                <li>Seletores otimizados</li>
+                <li>Sem dependências externas</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Documentação CSS - Última atualização: 06/01/2025</p>
+        <p>Meraki VitalSync © 2025</p>
+    </footer>
+</body>
+
+</html>
