@@ -75,5 +75,4 @@ Para mais informações sobre o andamento do projeto, consulte:
 - **Diário de Bordo do Projeto** – Detalhes sobre o processo de desenvolvimento e desafios enfrentados.
 - **Relatório de Orçamento** – Informações sobre hospedagem e registro de domínio (`merakivitalsync.com`).
 
-
-![]("WhatsApp Image 2025-11-13 at 21.56.17.jpeg")
+![](./imagemGrupo.jpeg)
