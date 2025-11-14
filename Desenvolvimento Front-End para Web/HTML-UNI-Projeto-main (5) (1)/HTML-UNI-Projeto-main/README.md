@@ -23,8 +23,8 @@ O projeto foi planejado como um pequeno ecossistema digital com os seguintes pil
 ---
 
 ### 3. Equipe e Divisão de Funções (1ª Entrega – Foco em HTML)
-
 | Membro da Equipe      | Responsabilidade Principal (Página)                                    | Foco Tecnológico                |
+
 |-----------------------|------------------------------------------------------------------------|---------------------------------|
 | Gabriel Bryan         | Página Inicial (`Home.html` \ `PoliticaDePrivacidade.html`)            | Estrutura HTML                  |
 | Nicolas Petrimperni   | Catálogo de Produtos (`Catalogo.html`)                                 | Estrutura HTML                  |
@@ -74,3 +74,6 @@ Foram desenvolvidas dez páginas essenciais para o e-commerce:
 Para mais informações sobre o andamento do projeto, consulte:
 - **Diário de Bordo do Projeto** – Detalhes sobre o processo de desenvolvimento e desafios enfrentados.
 - **Relatório de Orçamento** – Informações sobre hospedagem e registro de domínio (`merakivitalsync.com`).
+
+
+![]("WhatsApp Image 2025-11-13 at 21.56.17.jpeg")
