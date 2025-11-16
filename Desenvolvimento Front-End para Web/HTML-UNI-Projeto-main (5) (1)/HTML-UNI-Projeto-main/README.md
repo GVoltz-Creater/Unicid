@@ -75,4 +75,12 @@ Para mais informações sobre o andamento do projeto, consulte:
 - **Diário de Bordo do Projeto** – Detalhes sobre o processo de desenvolvimento e desafios enfrentados.
 - **Relatório de Orçamento** – Informações sobre hospedagem e registro de domínio (`merakivitalsync.com`).
 
+---
+
+### 7. Finalização do Projeto
+
+- **Apresentação**
+-  No dia 13/11 realizamos a apresentação do projeto, onde tinhamos por finalidade apresentar a toda turma como havia ficado o projeto e seu sentido, o do porque o criamos, e demonstrar tudo o que aprendemos no decorrer de todo o curso.  
+- **Grupo do Projeto** – A imagem abaixo apresenta todos os integrantes do **Grupo Meraki** que realizaram o trabalho.
+
 ![](./imagemGrupo.jpeg)
