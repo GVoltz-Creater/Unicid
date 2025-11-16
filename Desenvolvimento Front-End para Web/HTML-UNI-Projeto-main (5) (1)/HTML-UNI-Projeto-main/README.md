@@ -80,7 +80,9 @@ Para mais informações sobre o andamento do projeto, consulte:
 ### 7. Finalização do Projeto
 
 - **Apresentação**
--  No dia 13/11 realizamos a apresentação do projeto, onde tinhamos por finalidade apresentar a toda turma como havia ficado o projeto e seu sentido, o do porque o criamos, e demonstrar tudo o que aprendemos no decorrer de todo o curso.  
-- **Grupo do Projeto** – A imagem abaixo apresenta todos os integrantes do **Grupo Meraki** que realizaram o trabalho.
+   No dia 13/11 realizamos a apresentação do projeto, onde tinhamos por finalidade apresentar a toda turma como havia ficado o projeto e seu sentido, o do porque o criamos, e demonstrar tudo o que aprendemos no decorrer de todo o curso.  
 
+---
+
+- **Grupo do Projeto** – A imagem abaixo apresenta todos os integrantes do **Grupo Meraki** que realizaram o trabalho.
 ![](./imagemGrupo.jpeg)
